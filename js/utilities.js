@@ -42,3 +42,19 @@ function getProductNameAndPrice(event) {
     }
 
     }}
+
+const makePurchaseBtn = document.getElementById('make-purchase-btn').addEventListener('click',function(){
+    const modal = document.getElementById('modal');
+    modal.style.position = 'fixed';
+    modal.style.opacity='1';
+    modal.style.transition = 'all 2s';
+    const modalHomeBtn = document.getElementById('home-btn');
+    modalHomeBtn.addEventListener('click',function(){
+        
+            location.reload();    
+        
+        
+    });
+
+
+})
